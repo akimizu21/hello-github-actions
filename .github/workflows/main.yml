@@ -1,11 +1,11 @@
-# ワークフロー名を定義します。
+# ワークフロー名を定義
 name: Hello GitHub Actions
-# トリガーとなるイベントを定義します。(mainブランチへのpush)
+# トリガーとなるイベントを定義(mainブランチへのpush)
 on:
   push:
-		branches:
+    branches:
       - 'main'
-# ジョブを追加します。(最新バージョンのUbuntu上でビルドを実行します。)
+# ジョブの追加(最新バージョンをUbuntu上でbuildを実行)
 jobs:
   build:
     runs-on: ubuntu-latest
